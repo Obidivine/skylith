@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Your Identity</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Verify Your Identity</h1>
+    <p>We're required by law to collect your Social Security Number / TIN.</p>
+    <p><strong>SECURITY IN MIND</strong><br>We use your SSN or TIN to help keep your account safe and secure. Only for what you need. Occasionally we'll need to provide you with tax documents, which require your SSN.</p>
+    <p><strong>NO CREDIT SCORE IMPACT</strong><br>Applying for Skylith Account will never impact your credit score.</p>
+
+    <form id="identityForm">
+      <label for="ssn">Social Security Number / TIN:</label>
+      <input type="text" id="ssn" name="ssn" required>
+
+      <label for="confirmSSN">Confirm SSN / TIN:</label>
+      <input type="text" id="confirmSSN" name="confirmSSN" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <div class="button-group">
+        <button type="button" id="prevPage">Previous</button>
+        <button type="button" id="nextPage">Next</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

