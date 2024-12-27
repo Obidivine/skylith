@@ -1,139 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f8ff;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-.banne {
-  background: url('../images/logo.webp') no-repeat center;
-  background-size: cover;
-  text-align: center;
-  padding: 30px;
-  color: white;
-}
-
-h1, h2 {
-  color: #0056b3;
-}
-
-label {
-  display: block;
-  margin-top: 10px;
-}
-
-input, select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.button-group {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-
-input:focus {
-  border-color: #007BFF;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-button {
-  transition: transform 0.2s;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-input:focus {
-  border-color: #28a745;
-  outline: none;
-  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-input[type="text"], input[type="date"] {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-input:focus {
-  border-color: #007bff;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-.tshirt-order {
-  margin: 20px 0;
-}
-
-select {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-top: 10px;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
 /* Background and general styling */
 body {
     margin: 0;
@@ -143,6 +7,7 @@ body {
     background-size: cover;
     animation: fadeIn 2s ease-in-out;
     filter: brightness(70%);
+    color: white;
 }
 
 /* Animation for background */
@@ -153,6 +18,12 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #ffeb3b; /* Bright yellow for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
 }
 
 /* Button styling */
@@ -173,7 +44,7 @@ button:hover {
 
 /* Image responsiveness */
 img {
-    max-width: 100%;
+    max-width: 50%; /* Reduced image size to 50% */
     height: auto;
     display: block;
     margin: auto;
@@ -195,5 +66,4 @@ form {
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    color: white;
 }
