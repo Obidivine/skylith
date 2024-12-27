@@ -24,6 +24,7 @@ body {
 h1, h2 {
     color: #007bff; /* Bright yellow for better contrast */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+text-decoration: underline;
 }
 
 /* Button styling */
