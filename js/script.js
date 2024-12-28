@@ -158,3 +158,20 @@ function navigatePrevious() {
     currentPage.classList.remove("active");
     previousPage.classList.add("active");
 }
+// Navigation functions for next and previous buttons
+const previousButtons = document.querySelectorAll(".previous");
+const nextButtons = document.querySelectorAll(".next");
+
+previousButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+        navigatePrevious();
+    });
+});
+
+nextButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+        navigateNext();
+    });
+});
