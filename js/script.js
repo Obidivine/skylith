@@ -16,10 +16,10 @@ document.getElementById("next-button").addEventListener("click", () => {
 });
 // Navigation Buttons
 document.getElementById('previous-button').addEventListener('click', () => {
-    window.location.href = 'index.html'; // Replace with the actual path to the first page
+    window.location.href = 'page1.html'; // Navigate to the first page
 });
 
-document.getElementById('login-form').addEventListener('submit', (event) => {
+document.getElementById('next-button').addEventListener('click', (event) => {
     event.preventDefault(); // Prevent default form submission
 
     // Capture User Input
@@ -27,16 +27,16 @@ document.getElementById('login-form').addEventListener('submit', (event) => {
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
 
-    // Validation (Optional)
+    // Validation
     if (password !== confirmPassword) {
         alert('Passwords do not match!');
         return;
     }
 
-    // Store Data in Local Storage (For Now)
+    // Store Data in Local Storage (Temporary Solution)
     localStorage.setItem('email', email);
     localStorage.setItem('password', password);
 
-    // Proceed to Next Page
-    window.location.href = 'page3.html'; // Replace with the actual path to the third page
+    // Navigate to the Third Page
+    window.location.href = 'page3.html'; // Navigate to the third page
 });
