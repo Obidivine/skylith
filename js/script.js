@@ -133,3 +133,28 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+function navigateNext() {
+    const currentPage = document.querySelector(".page.active");
+    const nextPage = currentPage.nextElementSibling;
+
+    if (currentPage.id === "page1" && !validatePage1()) return;
+    if (currentPage.id === "page2" && !validatePage2()) return;
+    if (currentPage.id === "page3" && !validatePage3()) return;
+    if (currentPage.id === "page4" && !validatePage4()) return;
+
+    currentPage.classList.remove("active");
+    nextPage.classList.add("active");
+}
+
+function navigatePrevious() {
+    const currentPage = document.querySelector(".page.active");
+    const previousPage = currentPage.previousElementSibling;
+
+    if (currentPage.id === "page1" && !validatePage1()) return;
+    if (currentPage.id === "page2" && !validatePage2()) return;
+    if (currentPage.id === "page3" && !validatePage3()) return;
+    if (currentPage.id === "page4" && !validatePage4()) return;
+
+    currentPage.classList.remove("active");
+    previousPage.classList.add("active");
+}
