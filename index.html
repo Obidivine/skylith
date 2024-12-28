@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create Your Bank Account</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Bank Account - Step 1</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-image: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav-Tjna7p9-SQ2-EPf-FVcqh8cqy2-H.jpg'); background-size: cover;">
-  <div class="banner">
-    <h1>Create Your Bank Account</h1>
-  </div>
-
-  <section>
-    <h2>Personal Info</h2>
-    <form id="personal-info-form" enctype="multipart/form-data">
-      <label for="first-name">First Name:</label>
-      <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" required>
-
-      <label for="middle-name">Middle Name (optional):</label>
-      <input type="text" id="middle-name" name="middle_name" placeholder="Enter your middle name">
-
-      <label for="last-name">Last Name:</label>
-      <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" required>
-
-      <label for="account-type">Account Type:</label>
-      <select id="account-type" name="account_type" required>
-        <option value="savings">Savings</option>
-        <option value="current">Current</option>
-      </select>
-
-      <label for="country">Select Country:</label>
-      <select id="country" name="country" required>
-        <option value="usa">USA</option>
-        <option value="canada">Canada</option>
-        <!-- Add more countries here -->
-      </select>
-
-      <button type="button" id="next-btn" onclick="goToNextPage()">Next</button>
-    </form>
-  </section>
-
-  <script src="js/script.js"></script>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create Your Bank Account</h1>
+        </header>
+        <main>
+            <div class="section">
+                <h2>Personal Info</h2>
+                <form action="page2.html" method="POST" enctype="multipart/form-data">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="middleName">Middle Name (Optional):</label>
+                        <input type="text" id="middleName" name="middleName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <!-- Account Type -->
+                    <div class="form-group">
+                        <label for="accountType">Account Type:</label>
+                        <select id="accountType" name="accountType" required>
+                            <option value="savings">Savings</option>
+                            <option value="current">Current</option>
+                        </select>
+                    </div>
+                    <!-- Select Country -->
+                    <div class="form-group">
+                        <label for="country">Select Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Canada">Canada</option>
+                        </select>
+                    </div>
+                    <div class="buttons">
+                        <a href="page1.html" class="previous">Previous</a>
+                        <button type="submit" class="next">Next</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
