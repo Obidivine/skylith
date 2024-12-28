@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Your Bank Account</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Bank Account</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <div class="banner">
-        <h1>Create Your Bank Account</h1>
-    </div>
-    <section>
-        <h2>Personal Info</h2>
-        <form id="personal-info-form">
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="first-name" required>
+<body style="background-image: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav-Tjna7p9-SQ2-EPf-FVcqh8cqy2-H.jpg'); background-size: cover;">
+  <div class="banner">
+    <h1>Create Your Bank Account</h1>
+  </div>
 
-            <label for="middle-name">Middle Name (Optional):</label>
-            <input type="text" id="middle-name" name="middle-name">
+  <section>
+    <h2>Personal Info</h2>
+    <form id="personal-info-form" enctype="multipart/form-data">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" required>
 
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" required>
+      <label for="middle-name">Middle Name (optional):</label>
+      <input type="text" id="middle-name" name="middle_name" placeholder="Enter your middle name">
 
-            <label for="account-type">Account Type:</label>
-            <select id="account-type" name="account-type" required>
-                <option value="savings">Savings</option>
-                <option value="current">Current</option>
-            </select>
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" required>
 
-            <label for="country">Select Country:</label>
-            <input type="text" id="country" name="country" required>
-        </form>
-        <button id="next-button">Next</button>
-    </section>
+      <label for="account-type">Account Type:</label>
+      <select id="account-type" name="account_type" required>
+        <option value="savings">Savings</option>
+        <option value="current">Current</option>
+      </select>
 
-    <script src="scripts.js"></script>
+      <label for="country">Select Country:</label>
+      <select id="country" name="country" required>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <!-- Add more countries here -->
+      </select>
+
+      <button type="button" id="next-btn" onclick="goToNextPage()">Next</button>
+    </form>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
