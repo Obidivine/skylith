@@ -16,7 +16,7 @@ document.getElementById("next-button").addEventListener("click", () => {
 });
 // Navigation Buttons
 document.getElementById('previous-button').addEventListener('click', () => {
-    window.location.href = 'first-page.html'; // Replace with the actual path to the first page
+    window.location.href = 'index.html'; // Replace with the actual path to the first page
 });
 
 document.getElementById('login-form').addEventListener('submit', (event) => {
@@ -38,5 +38,5 @@ document.getElementById('login-form').addEventListener('submit', (event) => {
     localStorage.setItem('password', password);
 
     // Proceed to Next Page
-    window.location.href = 'third-page.html'; // Replace with the actual path to the third page
+    window.location.href = 'page3.html'; // Replace with the actual path to the third page
 });
