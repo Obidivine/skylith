@@ -175,3 +175,13 @@ nextButtons.forEach(button => {
         navigateNext();
     });
 });
+function navigateNext() {
+    console.log("Next button clicked");
+    const currentPage = document.querySelector(".page.active");
+    const nextPage = currentPage.nextElementSibling;
+
+    if (!nextPage) return;  // Prevent error if there's no next page
+
+    currentPage.classList.remove("active");
+    nextPage.classList.add("active");
+}
