@@ -324,3 +324,48 @@ input:focus, select:focus {
 .btn.confirm {
   background-color: #28a745;
 }
+
+/* Success Page Specific Styles */
+h2 {
+  color: #4CAF50;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.gift-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gift-image {
+  width: 50%;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+label {
+  margin: 10px;
+  display: inline-block;
+}
+
+label input[type="radio"] {
+  margin-right: 10px;
+}
+
+.btn.order-now {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.order-now:hover {
+  background-color: #0056b3;
+}
