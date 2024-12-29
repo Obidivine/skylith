@@ -1,77 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Your Bank Account - Step 4</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Your Identity</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Create Your Bank Account</h1>
-        </header>
-        <main>
-            <div class="section">
-                <h2>Verify Your Identity</h2>
-                <p>We're required by law to collect your Social Security Number / TIN.</p>
-                <form action="page5.html" method="POST" enctype="multipart/form-data">
-                    <!-- SSN -->
-                    <div class="form-group">
-                        <label for="ssn">Social Security Number (SSN):</label>
-                        <input type="text" id="ssn" name="ssn" required>
-                    </div>
-                    <!-- Confirm SSN -->
-                    <div class="form-group">
-                        <label for="confirmSSN">Confirm SSN / TIN:</label>
-                        <input type="text" id="confirmSSN" name="confirmSSN" required>
-                    </div>
-                    <!-- Government-Issued Photo ID -->
-                    <div class="form-group">
-                        <label for="idType">Government-Issued Photo ID:</label>
-                        <select id="idType" name="idType" required>
-                            <option value="passport">Passport</option>
-                            <option value="driversLicense">Driver’s License</option>
-                            <option value="nationalID">National ID card</option>
-                        </select>
-                        <input type="file" name="idPhoto" required>
-                    </div>
-                    <!-- Proof of Address -->
-                    <div class="form-group">
-                        <label for="proofOfAddress">Proof of Address:</label>
-                        <select id="proofOfAddress" name="proofOfAddress" required>
-                            <option value="utilityBill">Utility Bill</option>
-                            <option value="leaseAgreement">Lease Agreement</option>
-                            <option value="bankStatement">Bank Statement</option>
-                        </select>
-                        <input type="file" name="proofOfAddressPhoto" required>
-                    </div>
-                    <!-- Other fields: DOB, Phone, Photo, Credit Card -->
-                    <div class="form-group">
-                        <label for="dob">Date of Birth:</label>
-                        <input type="date" id="dob" name="dob" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number for Multi-Factor Authentication:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="selfie">Take a selfie:</label>
-                        <input type="file" name="selfie" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="creditCard">Credit Card:</label>
-                        <input type="file" name="creditCardFront" required>
-                        <input type="file" name="creditCardBack" required>
-                    </div>
-                    <div class="buttons">
-                        <a href="page3.html" class="previous">Previous</a>
-                        <button type="submit" class="next">Next</button>
-                    </div>
-                </form>
-            </div>
-        </main>
-    </div>
-    <script src="js/script.js"></script>
+  <div class="container">
+    <header class="header">
+      <h1>Create Your Bank Account</h1>
+    </header>
+
+    <section class="content">
+      <h2>Verify Your Identity</h2>
+      <p>We're required by law to collect your Social Security Number / TIN.</p>
+
+      <form id="verificationForm" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="ssn">Social Security Number (SSN):</label>
+          <input type="text" id="ssn" name="ssn" placeholder="Enter SSN" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmSsn">Confirm SSN / TIN:</label>
+          <input type="text" id="confirmSsn" name="confirmSsn" placeholder="Confirm SSN" required>
+        </div>
+
+        <div class="form-group">
+          <label for="photoId">Government-Issued Photo ID:</label>
+          <select id="photoId" name="photoId" required>
+            <option value="">Choose one</option>
+            <option value="passport">Passport</option>
+            <option value="drivers_license">Driver’s License</option>
+            <option value="national_id">National ID Card</option>
+          </select>
+          <input type="file" id="photoIdUpload" name="photoIdUpload" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+          <label for="proofOfAddress">Proof of Address:</label>
+          <select id="proofOfAddress" name="proofOfAddress" required>
+            <option value="">Choose one</option>
+            <option value="utility_bill">Utility Bill</option>
+            <option value="lease_agreement">Lease Agreement</option>
+            <option value="bank_statement">Bank Statement</option>
+          </select>
+          <input type="file" id="proofOfAddressUpload" name="proofOfAddressUpload" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number for Multi-Factor Authentication (MFA):</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="photoUpload">Photo:</label>
+          <input type="file" id="photoUpload" name="photoUpload" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+          <label for="creditCardFront">Credit Card (Front):</label>
+          <input type="file" id="creditCardFront" name="creditCardFront" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+          <label for="creditCardBack">Credit Card (Back):</label>
+          <input type="file" id="creditCardBack" name="creditCardBack" accept="image/*" required>
+        </div>
+
+        <div class="form-navigation">
+          <button type="button" class="btn previous" onclick="goToPage('page3.html')">Previous</button>
+          <button type="submit" class="btn next">Next</button>
+        </div>
+      </form>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
