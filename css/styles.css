@@ -1,75 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav-Tjna7p9-SQ2-EPf-FVcqh8cqy2-H.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.banner {
-    text-align: center;
-    background-color: rgba(0, 128, 255, 0.8);
-    padding: 20px;
-    color: white;
-    font-size: 24px;
+h1, h2 {
+  text-align: center;
+  color: #1e90ff;
 }
 
-.form-container {
-    margin: 50px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 1s ease-in-out;
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    margin-bottom: 5px;
-    font-weight: bold;
+  margin-top: 10px;
 }
 
 input, select {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.buttons {
-    display: flex;
-    justify-content: flex-end;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.next-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  background: #1e90ff;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-.next-btn:hover {
-    background-color: #0056b3;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.btn:hover {
+  background: #0056b3;
 }
