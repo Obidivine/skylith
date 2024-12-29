@@ -19,3 +19,7 @@ document.getElementById("nextButton").addEventListener("click", () => {
     })
     .catch(error => console.error("Error:", error));
 });
+// Navigation function for buttons
+function goToPage(page) {
+  window.location.href = page;
+}
