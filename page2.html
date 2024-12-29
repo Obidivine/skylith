@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Your Bank Account - Step 2</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residential Address</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Create Your Bank Account</h1>
-        </header>
-        <main>
-            <div class="section">
-                <h2>Create Your Login</h2>
-                <form action="page3.html" method="POST" enctype="multipart/form-data">
-                    <!-- Email Address -->
-                    <div class="form-group">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <!-- Password -->
-                    <div class="form-group">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <!-- Confirm Password -->
-                    <div class="form-group">
-                        <label for="confirmPassword">Confirm Password:</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" required>
-                    </div>
-                    <div class="buttons">
-                        <a href="page1.html" class="previous">Previous</a>
-                        <button type="submit" class="next">Next</button>
-                    </div>
-                </form>
-            </div>
-        </main>
-    </div>
-    <script src="js/script.js"></script>
+<body style="background-image: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav-Tjna7p9-SQ2-EPf-FVcqh8cqy2-H.jpg'); background-size: cover; background-repeat: no-repeat;">
+  <div class="container">
+    <header>
+      <h1>Residential Address</h1>
+    </header>
+    <main>
+      <form id="address-form">
+        <label for="state-address">State Address:</label>
+        <input type="text" id="state-address" name="state-address" required>
+
+        <label for="apt-suite-unit">Apt/Suite/Unit:</label>
+        <input type="text" id="apt-suite-unit" name="apt-suite-unit">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="zip-code">Zip Code:</label>
+        <input type="text" id="zip-code" name="zip-code" required>
+      </form>
+      <div class="navigation">
+        <a href="page1.html" class="btn prev-btn">Previous</a>
+        <a href="page3.html" class="btn next-btn">Next</a>
+      </div>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
