@@ -243,3 +243,57 @@ button:hover {
 .btn.next {
   background-color: #4a90e2;
 }
+/* Page 4 Specific Styles */
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+input:focus, select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.previous {
+  background-color: #b3b3b3;
+}
+
+.btn.next {
+  background-color: #4a90e2;
+}
