@@ -13,25 +13,30 @@
     </header>
     <main>
       <h2>Personal Info</h2>
-      <form id="personal-info-form">
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required>
 
-        <label for="middle-name">Middle Name (Optional):</label>
-        <input type="text" id="middle-name" name="middle-name">
+      <form id="personalInfoForm" action="/submit-personal-info" method="POST" enctype="multipart/form-data">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
 
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" required>
+    <label for="middleName">Middle Name (optional):</label>
+    <input type="text" id="middleName" name="middleName">
 
-        <label for="account-type">Account Type:</label>
-        <select id="account-type" name="account-type" required>
-          <option value="savings">Savings</option>
-          <option value="current">Current</option>
-        </select>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
 
-        <label for="country">Select Country:</label>
-        <input type="text" id="country" name="country" required>
-      </form>
+    <label for="accountType">Account Type:</label>
+    <select id="accountType" name="accountType" required>
+        <option value="savings">Savings</option>
+        <option value="current">Current</option>
+    </select>
+
+    <label for="country">Select Country:</label>
+    <input type="text" id="country" name="country" required>
+
+    <div class="navigation-buttons">
+        <button type="submit">Next</button>
+    </div>
+</form>
       <div class="navigation">
         <a href="page2.html" class="btn next-btn">Next</a>
       </div>
