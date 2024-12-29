@@ -129,3 +129,80 @@ button:hover {
     opacity: 1;
   }
 }
+/* Page-specific styles */
+.banner {
+  background: lightblue;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 2s;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  background: lightblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkblue;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
