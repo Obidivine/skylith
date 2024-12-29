@@ -77,3 +77,11 @@ document.getElementById("confirmButton").addEventListener("click", function () {
   alert("Your account has been successfully created!");
   window.location.href = "success.html";
 });
+
+document.getElementById("giftForm").addEventListener("submit", function (e) {
+  const selectedSize = document.querySelector('input[name="size"]:checked').value;
+  console.log("Selected T-Shirt Size:", selectedSize);
+
+  // Allow form submission
+  alert(`Your order for a free T-Shirt (Size: ${selectedSize}) has been placed!`);
+});
