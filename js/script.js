@@ -23,3 +23,23 @@ document.getElementById("nextButton").addEventListener("click", () => {
 function goToPage(page) {
   window.location.href = page;
 }
+// Navigation function
+function goToPage(page) {
+  window.location.href = page;
+}
+
+// Form submission handler
+document.getElementById('verificationForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  // Collect form data
+  const formData = new FormData(this);
+
+  // Debugging: Log form data to the console
+  for (let [key, value] of formData.entries()) {
+    console.log(`${key}: ${value}`);
+  }
+
+  // Redirect to the next page
+  window.location.href = 'page5.html';
+});
