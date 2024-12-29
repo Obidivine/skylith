@@ -43,3 +43,37 @@ document.getElementById('verificationForm').addEventListener('submit', function 
   // Redirect to the next page
   window.location.href = 'page5.html';
 });
+// Mock data from the previous pages (in a real app, this would come from session or backend)
+const mockFormData = {
+  fullName: "John Doe",
+  email: "john.doe@example.com",
+  phone: "123-456-7890",
+  photoId: "Passport",
+  proofOfAddress: "Utility Bill",
+  creditCardFront: "credit_card_front.jpg",
+  creditCardBack: "credit_card_back.jpg",
+};
+
+// Populate summary data
+function populateSummary() {
+  document.getElementById("fullNameDisplay").textContent = mockFormData.fullName;
+  document.getElementById("emailDisplay").textContent = mockFormData.email;
+  document.getElementById("phoneDisplay").textContent = mockFormData.phone;
+  document.getElementById("photoIdDisplay").textContent = mockFormData.photoId;
+  document.getElementById("proofOfAddressDisplay").textContent = mockFormData.proofOfAddress;
+  document.getElementById("creditCardFrontDisplay").textContent = mockFormData.creditCardFront;
+  document.getElementById("creditCardBackDisplay").textContent = mockFormData.creditCardBack;
+}
+
+// Call populateSummary when the page loads
+document.addEventListener("DOMContentLoaded", populateSummary);
+
+// Confirm button click handler
+document.getElementById("confirmButton").addEventListener("click", function () {
+  // Simulate sending data to the backend
+  console.log("Data sent to backend:", mockFormData);
+
+  // Notify the user and redirect
+  alert("Your account has been successfully created!");
+  window.location.href = "success.html";
+});
