@@ -1,12 +1,21 @@
-function goToNextPage() {
-    const form = document.getElementById('page1-form');
-    const formData = new FormData(form);
+document.getElementById("nextButton").addEventListener("click", () => {
+    const personalInfo = {
+        firstName: document.getElementById("firstName").value,
+        middleName: document.getElementById("middleName").value || "N/A",
+        lastName: document.getElementById("lastName").value,
+        accountType: document.getElementById("accountType").value,
+        country: document.getElementById("country").value,
+    };
 
-    // Log data to console (for testing purposes)
-    formData.forEach((value, key) => {
-        console.log(`${key}: ${value}`);
-    });
-
-    // Redirect to the next page
-    window.location.href = 'page2.html';
-}
+    fetch("http://your-backend-server/submit-personal-info", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(personalInfo),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Data submitted successfully:", data);
+        window.location.href = "page2.html"; // Navigate to next page
+    })
+    .catch(error => console.error("Error:", error));
+});
