@@ -3,37 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Residential Address</title>
+  <title>Create Login</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-image: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav-Tjna7p9-SQ2-EPf-FVcqh8cqy2-H.jpg'); background-size: cover; background-repeat: no-repeat;">
-  <div class="container">
-    <header>
-      <h1>Residential Address</h1>
-    </header>
-    <main>
-      <form id="address-form">
-        <label for="state-address">State Address:</label>
-        <input type="text" id="state-address" name="state-address" required>
-
-        <label for="apt-suite-unit">Apt/Suite/Unit:</label>
-        <input type="text" id="apt-suite-unit" name="apt-suite-unit">
-
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" required>
-
-        <label for="state">State:</label>
-        <input type="text" id="state" name="state" required>
-
-        <label for="zip-code">Zip Code:</label>
-        <input type="text" id="zip-code" name="zip-code" required>
+<body>
+  <header class="banner">
+    <h1>Fill All Form To Go Next Step</h1>
+  </header>
+  
+  <main>
+    <section class="form-container">
+      <h2>Create Your Login</h2>
+      <form id="loginForm" action="#" method="post">
+        <!-- Email Address -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+        
+        <!-- Confirm Password -->
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+        
+        <!-- Navigation Buttons -->
+        <div class="button-group">
+          <button type="button" onclick="window.location.href='index.html'">Previous</button>
+          <button type="button" onclick="window.location.href='page3.html'">Next</button>
+        </div>
       </form>
-      <div class="navigation">
-        <a href="page1.html" class="btn prev-btn">Previous</a>
-        <a href="page3.html" class="btn next-btn">Next</a>
-      </div>
-    </main>
-  </div>
-  <script src="js/script.js"></script>
+    </section>
+  </main>
 </body>
+<script src="js/script.js"></script>
 </html>
