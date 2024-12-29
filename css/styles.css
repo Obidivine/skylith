@@ -206,3 +206,40 @@ button:hover {
     opacity: 1;
   }
 }
+/* Page 3 Specific Styles */
+.info-box {
+  background-color: #eaf4fc;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 4px solid #4a90e2;
+  border-radius: 5px;
+}
+
+.info-box h2 {
+  font-size: 1.5em;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.previous {
+  background-color: #b3b3b3;
+}
+
+.btn.next {
+  background-color: #4a90e2;
+}
