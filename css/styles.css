@@ -297,3 +297,30 @@ input:focus, select:focus {
 .btn.next {
   background-color: #4a90e2;
 }
+/* Page 5 Specific Styles */
+#summary {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#summary h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#summary p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn.confirm {
+  background-color: #28a745;
+}
