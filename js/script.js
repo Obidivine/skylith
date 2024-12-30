@@ -85,3 +85,10 @@ document.getElementById("giftForm").addEventListener("submit", function (e) {
   // Allow form submission
   alert(`Your order for a free T-Shirt (Size: ${selectedSize}) has been placed!`);
 });
+// Responsive menu toggle
+const menuToggle = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
