@@ -369,3 +369,153 @@ label input[type="radio"] {
 .btn.order-now:hover {
   background-color: #0056b3;
 }
+/* Base styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    background-color: #0047AB;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.header .menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 3px 0;
+}
+
+.header .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header .nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-list.active {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #0047AB;
+        padding: 15px;
+        border-radius: 5px;
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #e0f7fa;
+    padding: 40px 20px;
+}
+
+.hero img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Features Section */
+.features {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.features .feature {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.features img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Animations */
+.animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
