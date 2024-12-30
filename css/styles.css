@@ -514,3 +514,32 @@ body {
         transform: translateX(0);
     }
 }
+
+.login-section {
+  text-align: center;
+  margin: 20px 0;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.login-section p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: #1e90ff;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  background: #0056b3;
+}
