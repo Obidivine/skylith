@@ -405,8 +405,7 @@ body {
     height: 3px;
     width: 25px;
     background: white;
-    margin: 3px 0;
-background-image: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav-Tjna7p9-SQ2-EPf-FVcqh8cqy2-H.jpg');
+    margin: 3px 0px;
 }
 
 .header .nav-list {
@@ -417,7 +416,7 @@ background-image: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav
 
 .header .nav-list li a {
     text-decoration: none;
-    color: #1e90ff;
+      color: #1e90ff;
     font-weight: 600;
 }
 
@@ -662,7 +661,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+      color: #1e90ff;
         text-decoration: underline;
 }
 
