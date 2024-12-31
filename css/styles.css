@@ -358,7 +358,7 @@ label input[type="radio"] {
   margin-top: 15px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .btn.order-now:hover {
@@ -381,6 +381,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+background-image: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav-Tjna7p9-SQ2-EPf-FVcqh8cqy2-H.jpg');
 }
 
 .header .container {
