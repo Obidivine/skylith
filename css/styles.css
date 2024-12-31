@@ -456,7 +456,8 @@ body {
 /* Features Section */
 .features {
     padding: 20px;
-    background-color: #fff;
+        background-color: #e0f7fa;
+    padding: 40px 20px;;
 }
 
 .features .feature {
