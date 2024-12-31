@@ -381,7 +381,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-background-image: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav-Tjna7p9-SQ2-EPf-FVcqh8cqy2-H.jpg');
 }
 
 .header .container {
@@ -407,6 +406,7 @@ background-image: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav
     width: 25px;
     background: white;
     margin: 3px 0;
+background-image: url('https://i.postimg.cc/gJTr3335/1000-F-252661691-b-KML6-Fav-Tjna7p9-SQ2-EPf-FVcqh8cqy2-H.jpg');
 }
 
 .header .nav-list {
