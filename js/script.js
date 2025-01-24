@@ -7,7 +7,7 @@ document.getElementById("nextButton").addEventListener("click", () => {
         country: document.getElementById("country").value,
     };
 
-    fetch("https://bank-backend-gold.vercel.app/submit-personal-info", {
+    fetch("https://bank-backend-gold.vercel.app", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(personalInfo),
