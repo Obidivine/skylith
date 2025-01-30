@@ -1,4 +1,4 @@
-document.getElementById("nextButton").addEventListener("click", () => {
+document.getElementById("submit").addEventListener("click", () => {
     const personalInfo = {
         firstName: document.getElementById("firstName").value,
         middleName: document.getElementById("middleName").value || "N/A", // Default to "N/A" if empty
