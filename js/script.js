@@ -1,5 +1,5 @@
 document.getElementById("submit").addEventListener("click", () => {
-    const personalInfo = {
+    const personalInfoForm = {
         firstName: document.getElementById("firstName").value,
         middleName: document.getElementById("middleName").value || "N/A", // Default to "N/A" if empty
         lastName: document.getElementById("lastName").value,
