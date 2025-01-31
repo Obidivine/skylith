@@ -1,4 +1,4 @@
-document.getElementById("personalInfoForm").addEventListener("click", function (e) {
+document.getElementById("personalInfoForm").addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent default form submission
 
     const personalInfo = {
@@ -20,7 +20,6 @@ document.getElementById("personalInfoForm").addEventListener("click", function (
         window.location.href = "page2.html"; // Navigate to the next page
     })
     .catch(error => console.error("Error:", error));
-});
 });
 // Navigation function for buttons
 function goToPage(page) {
