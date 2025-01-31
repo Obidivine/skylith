@@ -9,6 +9,21 @@ document.getElementById("personalInfoForm").addEventListener("submit", function 
         country: document.getElementById("country").value,
     };
 
+const email = document.getElementById("email").value;
+    if (!validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        return; // Stop form submission
+    }
+
+    // Proceed with the rest of the code to handle the form data...
+});
+
+// Helper function to validate email format
+function validateEmail(email) {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
+};
+
     fetch("https://bank-backend-gold.vercel.app", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
