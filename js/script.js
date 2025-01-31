@@ -1,4 +1,6 @@
-document.getElementById("nextButton").addEventListener("click", () => {
+document.getElementById("personalInfoForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
     const personalInfo = {
         firstName: document.getElementById("firstName").value,
         middleName: document.getElementById("middleName").value || "N/A",
@@ -15,9 +17,10 @@ document.getElementById("nextButton").addEventListener("click", () => {
     .then(response => response.json())
     .then(data => {
         console.log("Data submitted successfully:", data);
-        window.location.href = "page2.html"; // Navigate to next page
+        window.location.href = "page2.html"; // Navigate to the next page
     })
     .catch(error => console.error("Error:", error));
+});
 });
 // Navigation function for buttons
 function goToPage(page) {
