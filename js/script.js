@@ -10,7 +10,7 @@ document.getElementById("personalInfoForm").addEventListener("submit", () => {
     fetch("https://bank-backend-gold.herokuapp.com/api/users/register", { // Update endpoint to match your backend route
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(personalInfo),
+        body: JSON.stringify(personalInfoForm),
     })
     .then(response => response.json())
     .then(data => {
