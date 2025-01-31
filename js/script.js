@@ -17,7 +17,8 @@ document.getElementById("personalInfoForm").addEventListener("submit", function 
     };
 
     // Send data to backend
-    fetch("https://bank-backend-gold.vercel.app", {
+    fetch("https://bank-backend-gold.vercel.app/api/submit-form
+", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(personalInfo),
