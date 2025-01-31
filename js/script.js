@@ -26,10 +26,7 @@ document.getElementById("personalInfoForm").addEventListener("click", function (
 function goToPage(page) {
   window.location.href = page;
 }
-// Navigation function
-function goToPage(page) {
-  window.location.href = page;
-}
+
 
 // Form submission handler
 document.getElementById('verificationForm').addEventListener('submit', function (e) {
