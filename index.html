@@ -91,9 +91,13 @@
     <input type="text" id="country" name="country" required> </br>
 
     <div class="navigation-buttons">
-        <button id="nextbutton" type="submit" class="btn">
-submit
-</button>
+      <button id="nextbutton" type="submit" class="btn">Submit</button>
+
+<script>
+document.getElementById("nextbutton").addEventListener("click", function() {
+    document.getElementById("personalInfoForm").submit();
+});
+</script>
     </div>
 </form>
       </section>
