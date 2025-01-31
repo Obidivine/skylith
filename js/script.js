@@ -1,4 +1,4 @@
-document.getElementById("personalInfoForm").addEventListener("submit", function (e) {
+document.getElementById("personalInfoForm").addEventListener("button", function (e) {
     e.preventDefault(); // Prevent default form submission
 
     const personalInfo = {
